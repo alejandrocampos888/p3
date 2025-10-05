@@ -58,11 +58,15 @@
         transform: scale(1.1);
       }
 
-      h4{
+      h4.dia{
         background-color: deeppink;
         border-radius: 120px;
-        padding: 14px 10px;
-        margin: 2%;
+        padding: 10px 10px;
+        margin: 6%;
+        font-size: 1.5rem;
+
+
+        
         
         
       }
@@ -109,14 +113,14 @@
       
         text-align: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        background-color: deeppink;
+        background-color: rgb(255, 255, 255);
         font-family: "Space Grotesk", sans-serif;
         font-optical-sizing: auto;
         font-weight: weight;
         font-style: normal;
-        color: rgb(255, 255, 255);
+        color: deeppink;
         border-radius: 120px;
-        border: 3px solid white;
+        
         
       }
 
@@ -124,14 +128,14 @@
         
         text-align: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        background-color: deeppink;
+        background-color: rgb(255, 255, 255);
         font-family: "Space Grotesk", sans-serif;
         font-optical-sizing: auto;
         font-weight: weight;
         font-style: normal;
-        color: rgb(255, 255, 255);
+        color: deeppink;
         border-radius: 120px;
-        border: 3px solid white;
+        
       }
         
 
@@ -142,6 +146,7 @@
       text-align: center;
       display: flex;           
       gap: 20px; 
+      padding: 20px;
       
 
     }
@@ -188,6 +193,7 @@
       font-style:normal
       
       
+      
  
      }
 
@@ -203,7 +209,7 @@
       
       width: 100%;
       padding: 20px 0;           
-      box-sizing: border-box;   
+      box-sizing: border-box;  
       
     }
 
@@ -220,8 +226,9 @@
     .escenarios {
       display: flex;                 
       justify-content: space-between;
-      align-items: stretch;          
+      flex-direction: column;
       gap: 20px;
+      padding: 3%;
                         
 }
 
@@ -229,25 +236,23 @@
      flex: 1;                      
      padding: 10px;
      border-radius: 15px;
+    
      
+     
+  
+ 
 
      
 }   
 
 
-    .columna1:hover,
-.columna2:hover {
-  background-color: blue; /* color de fondo al pasar el ratón */
-  color: white; /* opcional: cambia el color del texto */
-  cursor: pointer; /* hace que parezca clickeable */
-}
+
 
 
     body {
       margin: 0;
-      min-height: 100vh; /* mínimo toda la altura de pantalla */
-      background: url("img/lletres.jpg.png") no-repeat center center fixed;
-      background-size: cover; /* hace que la foto cubra todo */
+      min-height: 100vh;
+      
     }
 
 
@@ -263,7 +268,11 @@
         transform: scale(1.1);
   }
 
-    
+  
+  main{
+
+    padding: 4%;
+  }
     
     
 
@@ -287,7 +296,7 @@
  </header>
    <main>
    <section>
-     <h4>Jueves</h4>
+     <h4 class="dia">Jueves</h4>
     <ul>
       <li>ARTISTA SORPRESA</li>
       <li>Lowlight </li>
@@ -298,7 +307,8 @@
       <li>Black Saphire</li>
     </ul>
    </section>
-   <section> <h4>Viernes</h4>
+   <section> 
+    <h4 class="dia">Viernes</h4>
     <ul>
        <li>Ayax Y Prok</li>
        <li>Beret</li>
@@ -311,7 +321,7 @@
     </ul></section>
    
     <section>
-        <h4>Sabado</h4>
+        <h4 class="dia">Sabado</h4>
     <div class="escenarios">
     <div class="columna1">
         <h4>Escenario 1</h4>
@@ -335,7 +345,8 @@
     </ul>
     </div>
     </section>
-    <section><h4>Domingo</h4>
+    <section>
+      <h4 class="dia">Domingo</h4>
     <ul>
         <li>Kaydy Cain</li>
         <li>Costa</li>
@@ -357,7 +368,7 @@
 
     <P>Compra las entradas: <a href="https://www.riverlandfest.es/asturias-2026/"> Aquí</a>
    </footer>
-    <a href="img/lletres.jpg.png"></a>
+    
    
 
 </body>
